@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script type="text/javascript">
+	  function startTimer() {
+	    var my_timer = document.getElementById("my_timer");
+	    var time = my_timer.innerHTML;
+	    var arr = time.split(":");
+	    var h = arr[0];
+	    var m = arr[1];
+	    var s = arr[2];
+	    if (s == 0) {
+	      if (m == 0) {
+	        if (h == 0) {
+	          alert("Скидка закончилась");
+	          window.location.reload();
+	          return;
+	        }
+	        h--;
+	        m = 60;
+	        if (h < 10) h = "0" + h;
+	      }
+	      m--;
+	      if (m < 10) m = "0" + m;
+	      s = 59;
+	    }
+	    else s--;
+	    if (s < 10) s = "0" + s;
+	    document.getElementById("my_timer").innerHTML = h+":"+m+":"+s;
+	    setTimeout(startTimer, 1000);
+	  }
+	</script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="wcc/main.css">
+	<title>Shopper.ru</title>
+</head>
+<body onload="startTimer()">
+	<div class="container">
+		<div class="top">
+			<div class="number">89189592751</div>
+			<a href="index.html"><div class="shop_name">Shopper</div></a>
+			<div class="mail">zahar.kon05@gmail.com</div>
+		</div>
+	</div>
+	<div class="gradient_top">
+		<div class="container">
+			<a href="#"><div class="clothes">Одежда</div></a>
+			<a href="shoes.html"><div class="shoes">Обувь</div></a>
+		</div>
+	</div>
+	<div class="main_part">
+		<div class="container">
+			<div class="item">
+				<p><span id="my_timer" style="color: #008000; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color:white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color: white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color:white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color: white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color: white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color:white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color:white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+			<div class="item">
+				<p><span id="my_timer" style="color:white; font-size: 100%; font-weight: bold;">01:35:00</span></p>
+				<a href="clothes1.html"><img class="item1" src="img/кофта2.jpg"></a>
+				<del> 2500 <i class="skid" aria-hidden="true"></i></del>
+				<div>  2399 </div>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="info_bottom">
+				<div class="number_bottom">
+					89189592751
+				</div>
+				<a href="https://yandex.ru/maps/geo/rostov_na_donu/53166035/?ll=39.653644%2C47.250075&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&z=11"><div class="adress">
+					Ростов-на-Дону
+				</div></a>
+				<div class="mail_bottom">
+					zahar.kon05@gmail.com
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
